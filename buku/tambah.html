@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SIMPUS-Mini | Tambah Buku</title>
-    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <header>
         <h1>SIMPUS-Mini</h1>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+        <button type="button" id="nav-toggle-btn" class="nav-toggle-label" aria-label="Menu">&#9776;</button>
         <nav>
             <ul>
                 <li><a href="../index.html">Beranda</a></li>
@@ -25,7 +24,7 @@
     <main>
         <section>
             <h2>Tambah Buku</h2>
-            <form>
+            <form id="form-tambah">
                 <p>
                     <label for="judul">Judul</label><br>
                     <input type="text" id="judul" name="judul" required>
@@ -40,7 +39,7 @@
                 </p>
                 <p>
                     <label for="isbn">ISBN</label><br>
-                    <input type="text" id="isbn" name="isbn">
+                    <input type="text" id="isbn" name="isbn" placeholder="cth: 978-602-291-123-4">
                 </p>
                 <p>
                     <label for="stok">Stok</label><br>
@@ -62,7 +61,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 SIMPUS-Mini &mdash; Jobsheet 3</p>
+        <p>&copy; 2026 SIMPUS-Mini &mdash; Jobsheet 5</p>
     </footer>
+    <script src="../assets/js/app.js"></script>
 </body>
 </html>
