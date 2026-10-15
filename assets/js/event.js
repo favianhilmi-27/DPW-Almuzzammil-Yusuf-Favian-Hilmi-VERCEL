@@ -8,7 +8,6 @@ async function muatDaftarEvent() {
     tbody.innerHTML = "";
 
     try {
-        // simulasi delay jaringan agar loading indicator terlihat
         await new Promise((resolve) => setTimeout(resolve, 600));
 
         const res = await fetch("../data/event.json");

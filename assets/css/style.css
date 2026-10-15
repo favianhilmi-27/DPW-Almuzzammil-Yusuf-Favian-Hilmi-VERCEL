@@ -16,10 +16,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 /* ===== Header & Navbar ===== */
 header {
     background: #0c3b2e;
@@ -54,7 +50,7 @@ header nav ul {
 
 header nav a {
     color: #dfe9e1;
-    font-weight: 500;
+    font-weight: 300;
     padding: 0.5rem 1rem;
     border-radius: 20px;
     transition: background-color 0.15s ease;
@@ -69,10 +65,10 @@ header nav a:hover {
 header nav a.aktif {
     background-color: #ffba00;
     color: #0c3b2e;
-    font-weight: 600;
+    font-weight: 700;
 }
 
-/* ===== Main Layout ===== */
+/* layout main */
 main {
     max-width: 1000px;
     margin: 2rem auto;
@@ -92,7 +88,6 @@ section h2 {
     color: #0c3b2e;
 }
 
-/* ===== Kartu Statistik (CSS Grid) ===== */
 main section:nth-of-type(2) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -114,7 +109,7 @@ main section:nth-of-type(2) article {
 
 main section:nth-of-type(2) article:hover {
     background: #0c3b2e;
-    transform: translateY(-4px);
+    transform: translateY(-4px) scale(1.01);
     box-shadow: 0 10px 20px rgba(12, 59, 46, 0.3);
     border-color: #0c3b2e;
 }
@@ -143,7 +138,9 @@ main section:nth-of-type(2) article:hover p {
 table {
     width: 100%;
     border-collapse: collapse;
+    border-spacing: ;
 }
+
 
 th, td {
     text-align: left;
@@ -167,10 +164,12 @@ tbody tr:hover {
 td button {
     padding: 0.35rem 0.8rem;
     margin-right: 0.35rem;
+    margin-bottom: 0.25rem;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     font-size: 0.85rem;
+    
 }
 
 td button:first-of-type {
@@ -184,7 +183,7 @@ td button:last-of-type,
     color: #fff;
 }
 
-/* ===== Form ===== */
+/* tambah.html */
 form p {
     margin-bottom: 1rem;
 }
@@ -227,7 +226,7 @@ form button[type="submit"]:hover {
     background-color: #0c3b2e;
 }
 
-/* ===== Pesan Error Validasi ===== */
+/* error */
 .error {
     display: block;
     color: #b5483d;
@@ -235,7 +234,7 @@ form button[type="submit"]:hover {
     margin-top: 0.25rem;
 }
 
-/* ===== Kolom Pencarian ===== */
+/* search box */
 .search-box {
     margin-bottom: 1rem;
 }
@@ -305,9 +304,80 @@ footer {
     main section:nth-of-type(2) {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .event-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+/* ===== Event Terbaru (kartu + foto) ===== */
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.event-card {
+    background-color: #fff;
+    border: 1px solid #dde5dc;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(12, 59, 46, 0.2);
+}
+
+.event-foto {
+    height: 140px;
+    background: linear-gradient(135deg, #6d9773, #0c3b2e);
+    color: #fff;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-info {
+    padding: 1rem;
+}
+
+.event-kategori {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #bb8a52;
+}
+
+.event-info h3 {
+    margin: 0.25rem 0;
+    font-size: 1.05rem;
+    color: #0c3b2e;
+}
+
+.event-info p {
+    font-size: 0.85rem;
+    color: #6b7c73;
+}
+
+.event-kuota {
+    margin-top: 0.35rem;
+    font-weight: 600;
+}
+
+/* tampilan di HP */
 @media (max-width: 480px) {
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
     .nav-toggle-label {
         display: block;
     }
