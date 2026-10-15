@@ -1,0 +1,14 @@
+[
+    { "nama_event": "Seminar Kepenyiaran", "penyelenggara": "UKM PLFM", "tanggal": "2026-11-05", "kuota": 150, "kategori": "seminar" },
+    { "nama_event": "Workshop Desain UI/UX", "penyelenggara": "WRI", "tanggal": "2026-11-12", "kuota": 40, "kategori": "workshop" },
+    { "nama_event": "Lomba Web Development", "penyelenggara": "HMTI", "tanggal": "2026-11-20", "kuota": 30, "kategori": "lomba" },
+    { "nama_event": "Seminar Karier IT", "penyelenggara": "HMTI", "tanggal": "2026-11-27", "kuota": 200, "kategori": "seminar" },
+    { "nama_event": "Workshop Public Speaking", "penyelenggara": "UKM Pendidikan & Penalaran", "tanggal": "2026-12-03", "kuota": 35, "kategori": "workshop" },
+    { "nama_event": "Lomba Debat Antar Jurusan", "penyelenggara": "UKM Pendidikan & Penalaran", "tanggal": "2026-12-10", "kuota": 24, "kategori": "lomba" },
+    { "nama_event": "Workshop Fotografi Dasar", "penyelenggara": "UKM Seni Theatrisic", "tanggal": "2026-12-14", "kuota": 25, "kategori": "workshop" },
+    { "nama_event": "Seminar Kewirausahaan Muda", "penyelenggara": "UKM USMA", "tanggal": "2026-12-18", "kuota": 120, "kategori": "seminar" },
+    { "nama_event": "Lomba Desain Poster", "penyelenggara": "UKM PLFM", "tanggal": "2027-01-08", "kuota": 50, "kategori": "lomba" },
+    { "nama_event": "Workshop Git & GitHub", "penyelenggara": "HMTI", "tanggal": "2027-01-15", "kuota": 45, "kategori": "workshop" },
+    { "nama_event": "Seminar Kecerdasan Buatan", "penyelenggara": "HMTI", "tanggal": "2027-01-22", "kuota": 180, "kategori": "seminar" },
+    { "nama_event": "Lomba Mobile App Development", "penyelenggara": "HMTI", "tanggal": "2027-01-29", "kuota": 20, "kategori": "lomba" }
+]

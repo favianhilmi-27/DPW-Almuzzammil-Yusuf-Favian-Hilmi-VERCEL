@@ -1,5 +1,5 @@
-// Mengambil & menampilkan Daftar Anggota secara asinkron dari data/anggota.json
-async function muatDaftarAnggota() {
+// Mengambil & menampilkan Daftar Peserta secara asinkron dari data/peserta.json
+async function muatDaftarPeserta() {
     const tbody = document.querySelector(".table-responsive table tbody");
     const loading = document.getElementById("loading-indicator");
     if (!tbody) return;
@@ -10,19 +10,19 @@ async function muatDaftarAnggota() {
     try {
         await new Promise((resolve) => setTimeout(resolve, 600));
 
-        const res = await fetch("../data/anggota.json");
+        const res = await fetch("../data/peserta.json");
         if (!res.ok) {
             throw new Error("Gagal mengambil data (status " + res.status + ")");
         }
-        const daftarAnggota = await res.json();
+        const daftarPeserta = await res.json();
 
-        daftarAnggota.forEach(function (anggota) {
+        daftarPeserta.forEach(function (peserta) {
             const tr = document.createElement("tr");
             tr.innerHTML =
-                "<td>" + anggota.no_anggota + "</td>" +
-                "<td>" + anggota.nama + "</td>" +
-                "<td>" + anggota.alamat + "</td>" +
-                "<td>" + anggota.no_hp + "</td>" +
+                "<td>" + peserta.nim + "</td>" +
+                "<td>" + peserta.nama + "</td>" +
+                "<td>" + peserta.prodi + "</td>" +
+                "<td>" + peserta.no_hp + "</td>" +
                 "<td>" +
                 "<button type=\"button\">Edit</button> " +
                 "<button type=\"button\" class=\"btn-hapus\">Hapus</button>" +
@@ -37,4 +37,4 @@ async function muatDaftarAnggota() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", muatDaftarAnggota);
+document.addEventListener("DOMContentLoaded", muatDaftarPeserta);

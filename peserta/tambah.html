@@ -3,39 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SIMPUS-Mini | Tambah Anggota</title>
+    <title>SIMEVENT | Tambah Peserta</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <header>
-        <h1>SIMPUS-Mini</h1>
+        <h1>SIMEVENT</h1>
         <button type="button" id="nav-toggle-btn" class="nav-toggle-label" aria-label="Menu">&#9776;</button>
         <nav>
             <ul>
                 <li><a href="../index.html">Beranda</a></li>
-                <li><a href="../buku/list.html">Daftar Buku</a></li>
-                <li><a href="../buku/tambah.html">Tambah Buku</a></li>
-                <li><a href="list.html">Daftar Anggota</a></li>
-                <li><a href="tambah.html" class="aktif">Tambah Anggota</a></li>
+                <li><a href="../event/list.html">Daftar Event</a></li>
+                <li><a href="../event/tambah.html">Tambah Event</a></li>
+                <li><a href="list.html">Daftar Peserta</a></li>
+                <li><a href="tambah.html" class="aktif">Tambah Peserta</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>Tambah Anggota</h2>
+            <h2>Tambah Peserta</h2>
             <form id="form-tambah">
                 <p>
                     <label for="nama">Nama</label><br>
                     <input type="text" id="nama" name="nama" required>
                 </p>
                 <p>
-                    <label for="no_anggota">No. Anggota</label><br>
-                    <input type="text" id="no_anggota" name="no_anggota" required>
+                    <label for="nim">NIM</label><br>
+                    <input type="text" id="nim" name="nim" required>
                 </p>
                 <p>
-                    <label for="alamat">Alamat</label><br>
-                    <input type="text" id="alamat" name="alamat">
+                    <label for="prodi">Program Studi</label><br>
+                    <input type="text" id="prodi" name="prodi" required>
                 </p>
                 <p>
                     <label for="no_hp">No. HP</label><br>
@@ -49,7 +49,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 SIMPUS-Mini &mdash; Jobsheet 5</p>
+        <p>&copy; 2026 SIMEVENT &mdash; UTS DPW</p>
     </footer>
     <script src="../assets/js/app.js"></script>
 </body>

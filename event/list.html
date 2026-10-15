@@ -3,45 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SIMPUS-Mini | Daftar Buku</title>
+    <title>SIMEVENT | Daftar Event</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
     <header>
-        <h1>SIMPUS-Mini</h1>
+        <h1>SIMEVENT</h1>
         <button type="button" id="nav-toggle-btn" class="nav-toggle-label" aria-label="Menu">&#9776;</button>
         <nav>
             <ul>
                 <li><a href="../index.html">Beranda</a></li>
-                <li><a href="list.html" class="aktif">Daftar Buku</a></li>
-                <li><a href="tambah.html">Tambah Buku</a></li>
-                <li><a href="../anggota/list.html">Daftar Anggota</a></li>
-                <li><a href="../anggota/tambah.html">Tambah Anggota</a></li>
+                <li><a href="list.html" class="aktif">Daftar Event</a></li>
+                <li><a href="tambah.html">Tambah Event</a></li>
+                <li><a href="../peserta/list.html">Daftar Peserta</a></li>
+                <li><a href="../peserta/tambah.html">Tambah Peserta</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>Daftar Buku</h2>
+            <h2>Daftar Event</h2>
             <div class="search-box">
-                <label for="search-input">Cari Judul Buku</label>
-                <input type="text" id="search-input" data-search-col="0" placeholder="Ketik judul buku...">
+                <label for="search-input">Cari Nama Event</label>
+                <input type="text" id="search-input" data-search-col="0" placeholder="Ketik nama event...">
             </div>
             <p id="loading-indicator" style="display:none;">Memuat data...</p>
             <div class="table-responsive">
             <table>
                 <thead>
                     <tr>
-                        <th>Judul</th>
-                        <th>Pengarang</th>
-                        <th>Tahun</th>
-                        <th>Stok</th>
+                        <th>Nama Event</th>
+                        <th>Penyelenggara</th>
+                        <th>Tanggal</th>
+                        <th>Kuota</th>
+                        <th>Kategori</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Data buku akan diisi di sini menggunakan Assets -->
+                    <!-- Data event akan diisi di sini lewat event.js (fetch dari data/event.json) -->
                 </tbody>
             </table>
             </div>
@@ -49,9 +50,9 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 SIMPUS-Mini &mdash; Jobsheet 5</p>
+        <p>&copy; 2026 SIMEVENT &mdash; UTS DPW</p>
     </footer>
     <script src="../assets/js/app.js"></script>
-    <script src="../assets/js/buku.js"></script>
+    <script src="../assets/js/event.js"></script>
 </body>
 </html>

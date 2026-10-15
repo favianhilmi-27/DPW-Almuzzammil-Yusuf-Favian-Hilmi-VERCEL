@@ -81,34 +81,32 @@ function hapusError(input) {
 
 const aturanValidasi = [
     {
-        selector: "[name='judul'], [name='nama']",
+        selector: "[name='nama_event'], [name='nama']",
         wajib: true,
         pesanWajib: "Field ini wajib diisi."
     },
     {
-        selector: "[name='pengarang']",
+        selector: "[name='penyelenggara']",
         wajib: true,
-        pesanWajib: "Pengarang wajib diisi."
+        pesanWajib: "Penyelenggara wajib diisi."
     },
     {
-        selector: "[name='tahun']",
-        tipe: "angka",
-        min: 1900,
-        max: 2026,
-        pesanRange: "Tahun harus di antara 1900-2026."
+        selector: "[name='tanggal']",
+        wajib: true,
+        pesanWajib: "Tanggal pelaksanaan wajib diisi."
     },
     {
-        selector: "[name='stok']",
+        selector: "[name='kuota']",
         tipe: "angka",
-        min: 0,
-        pesanRange: "Stok tidak boleh negatif."
+        min: 1,
+        pesanRange: "Kuota minimal 1 peserta."
     },
     {
 
-        selector: "[name='isbn']",
+        selector: "[name='kode_event']",
         wajib: false,
-        pola: /^[0-9-]+$/,
-        pesanPola: "ISBN hanya boleh berisi angka dan tanda hubung (-)."
+        pola: /^[A-Za-z0-9-]+$/,
+        pesanPola: "Kode event hanya boleh berisi huruf, angka, dan tanda hubung (-)."
     }
 ];
 
@@ -163,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
     initTableFilter();
     initValidasiForm();
 
-    // Tampilkan counter awal ("Menampilkan 5 dari 5 buku") begitu halaman dimuat
+    // Tampilkan counter awal ("Menampilkan 5 dari 5 event") begitu halaman dimuat
     const table = document.querySelector(".table-responsive table");
     if (table) updateCounter(table);
 });

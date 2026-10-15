@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SIMEVENT | Tambah Event</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>SIMEVENT</h1>
+        <button type="button" id="nav-toggle-btn" class="nav-toggle-label" aria-label="Menu">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="list.html">Daftar Event</a></li>
+                <li><a href="tambah.html" class="aktif">Tambah Event</a></li>
+                <li><a href="../peserta/list.html">Daftar Peserta</a></li>
+                <li><a href="../peserta/tambah.html">Tambah Peserta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Tambah Event</h2>
+            <form id="form-tambah">
+                <p>
+                    <label for="nama_event">Nama Event</label><br>
+                    <input type="text" id="nama_event" name="nama_event" required>
+                </p>
+                <p>
+                    <label for="penyelenggara">Penyelenggara (Organisasi)</label><br>
+                    <input type="text" id="penyelenggara" name="penyelenggara" required>
+                </p>
+                <p>
+                    <label for="tanggal">Tanggal Pelaksanaan</label><br>
+                    <input type="date" id="tanggal" name="tanggal" required>
+                </p>
+                <p>
+                    <label for="kode_event">Kode Event</label><br>
+                    <input type="text" id="kode_event" name="kode_event" placeholder="cth: EVT-2026-001">
+                </p>
+                <p>
+                    <label for="kuota">Kuota Peserta</label><br>
+                    <input type="number" id="kuota" name="kuota" min="1" required>
+                </p>
+                <p>
+                    <label for="kategori">Kategori</label><br>
+                    <select id="kategori" name="kategori">
+                        <option value="seminar">Seminar</option>
+                        <option value="lomba">Lomba</option>
+                        <option value="workshop">Workshop</option>
+                    </select>
+                </p>
+                <p>
+                    <button type="submit">Simpan</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SIMEVENT &mdash; UTS DPW</p>
+    </footer>
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>
