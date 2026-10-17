@@ -16,7 +16,7 @@ a {
     text-decoration: none;
 }
 
-/* ===== Header & Navbar ===== */
+/* Header & Navbar */
 header {
     background: #0c3b2e;
     color: #fff;
@@ -310,15 +310,14 @@ footer {
     }
 }
 
-/* ===== Event Terbaru (kartu + foto) ===== */
-/* Menargetkan div pembungkus grid di dalam section kedua */
+/* Section 3 untuk foto*/
+
 section:nth-of-type(3) > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
-/* Menargetkan tag article langsung */
 section:nth-of-type(3) article {
     background-color: #fff;
     border: 1px solid #dde5dc;
