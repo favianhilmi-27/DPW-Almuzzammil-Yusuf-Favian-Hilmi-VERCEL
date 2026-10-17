@@ -9,7 +9,6 @@ body {
     color: #1f2d27;
     background: #e9eee8;
     line-height: 1.5;
-    /* padding-left: 240px;  */
 }
 
 a {
@@ -17,7 +16,6 @@ a {
     text-decoration: none;
 }
 
-/* Header */
 header {
     background: #0c3b2e;
     color: #fff;
@@ -31,24 +29,7 @@ header {
     box-shadow: 0 6px 16px rgba(12, 59, 46, 0.35);
 }
 
-/* Sidebar */
-/* header {
-    position: fixed;         
-    top: 0;
-    left: 0;
-    width: 240px;          
-    height: 100vh;         
-    flex-direction: column;  
-    align-items: flex-start;
-    justify-content: flex-start;
-    border-radius: 0 24px 24px 0;     
-    box-shadow: 6px 0 16px rgba(12, 59, 46, 0.35);   
-header h1 {
-    font-size: 1.9rem;
-} */
-
 header nav {
-    /* flex-direction: column; */
     order: 2;
     width: 100%;
     margin-top: 1rem;
