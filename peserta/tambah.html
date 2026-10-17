@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SIMEVENT | Tambah Peserta</title>
+    <title>SIMEVENT | Tambah Penyelenggara</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
@@ -15,27 +15,32 @@
                 <li><a href="../index.html">Beranda</a></li>
                 <li><a href="../event/list.html">Daftar Event</a></li>
                 <li><a href="../event/tambah.html">Tambah Event</a></li>
-                <li><a href="list.html">Daftar Peserta</a></li>
-                <li><a href="tambah.html" class="aktif">Tambah Peserta</a></li>
+                <li><a href="list.html">Daftar Penyelenggara</a></li>
+                <li><a href="tambah.html" class="aktif">Tambah Penyelenggara</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <h2>Tambah Peserta</h2>
+            <h2>Tambah Penyelenggara</h2>
             <form id="form-tambah">
                 <p>
-                    <label for="nama">Nama</label><br>
-                    <input type="text" id="nama" name="nama" required>
+                    <label for="nama">Nama Penyelenggara</label><br>
+                    <input type="text" id="nama" name="nama" placeholder="cth: HMTI" required>
                 </p>
                 <p>
-                    <label for="nim">NIM</label><br>
-                    <input type="text" id="nim" name="nim" required>
+                    <label for="jenis">Jenis</label><br>
+                    <select id="jenis" name="jenis">
+                        <option value="UKM">UKM</option>
+                        <option value="Himpunan">Himpunan</option>
+                        <option value="BEM">BEM</option>
+                        <option value="Komunitas">Komunitas</option>
+                    </select>
                 </p>
                 <p>
-                    <label for="prodi">Program Studi</label><br>
-                    <input type="text" id="prodi" name="prodi" required>
+                    <label for="ketua">Nama Ketua</label><br>
+                    <input type="text" id="ketua" name="ketua" required>
                 </p>
                 <p>
                     <label for="no_hp">No. HP</label><br>

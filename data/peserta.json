@@ -1,8 +1,8 @@
 [
-    { "nim": "254107020101", "nama": "Siti Aminah", "prodi": "Teknik Informatika", "no_hp": "0812xxxx" },
-    { "nim": "254107020102", "nama": "Budi Santoso", "prodi": "Teknik Informatika", "no_hp": "0813xxxx" },
-    { "nim": "254107020103", "nama": "Dewi Lestari", "prodi": "Sistem Informasi Bisnis", "no_hp": "0814xxxx" },
-    { "nim": "254107020104", "nama": "Rizky Firmansyah", "prodi": "Teknik Elektro", "no_hp": "0815xxxx" },
-    { "nim": "254107020105", "nama": "Jovita Mahardika", "prodi": "Teknik Informatika", "no_hp": "0816xxxx" }
-
+    { "nama": "UKM PLFM", "jenis": "UKM", "ketua": "Siti Aminah", "no_hp": "0812xxxx" },
+    { "nama": "WRI", "jenis": "Komunitas", "ketua": "Budi Santoso", "no_hp": "0813xxxx" },
+    { "nama": "HMTI", "jenis": "Himpunan", "ketua": "Dewi Lestari", "no_hp": "0814xxxx" },
+    { "nama": "UKM Pendidikan & Penalaran", "jenis": "UKM", "ketua": "Rizky Firmansyah", "no_hp": "0815xxxx" },
+    { "nama": "UKM Seni Theatrisic", "jenis": "UKM", "ketua": "Jovita Mahardika", "no_hp": "0816xxxx" },
+    { "nama": "UKM USMA", "jenis": "UKM", "ketua": "Andini Putri", "no_hp": "0817xxxx" }
 ]
