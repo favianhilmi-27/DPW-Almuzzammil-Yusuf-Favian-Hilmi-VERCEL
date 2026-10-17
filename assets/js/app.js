@@ -24,8 +24,6 @@ function updateCounter(table) {
     counter.textContent = "Menampilkan " + tampil + " dari " + total + " " + label;
 }
 
-// ===== Konfirmasi hapus (front-end only, belum ke server) =====
-
 function initHapusConfirm() {
     document.addEventListener("click", function (e) {
         const btn = e.target.closest(".btn-hapus");
@@ -41,8 +39,6 @@ function initHapusConfirm() {
         }
     });
 }
-
-// ===== Filter/pencarian tabel real-time (Latihan 8.4 no.3) =====
 
 function initTableFilter() {
     const input = document.getElementById("search-input");

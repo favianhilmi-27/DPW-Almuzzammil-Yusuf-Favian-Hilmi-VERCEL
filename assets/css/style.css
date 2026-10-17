@@ -311,13 +311,15 @@ footer {
 }
 
 /* ===== Event Terbaru (kartu + foto) ===== */
-.event-grid {
+/* Menargetkan div pembungkus grid di dalam section kedua */
+section:nth-of-type(3) > div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
-.event-card {
+/* Menargetkan tag article langsung */
+section:nth-of-type(3) article {
     background-color: #fff;
     border: 1px solid #dde5dc;
     border-radius: 12px;
@@ -325,12 +327,12 @@ footer {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.event-card:hover {
+section:nth-of-type(3) article:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 20px rgba(12, 59, 46, 0.2);
 }
 
-.event-foto {
+section:nth-of-type(3) article > div:first-child {
     height: 140px;
     background: linear-gradient(135deg, #6d9773, #0c3b2e);
     color: #fff;
@@ -340,36 +342,25 @@ footer {
     justify-content: center;
 }
 
-.event-foto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.event-info {
+section:nth-of-type(3) article > div:last-child {
     padding: 1rem;
 }
 
-.event-kategori {
+section:nth-of-type(3) article > div:last-child span {
     font-size: 0.8rem;
     font-weight: 600;
     color: #bb8a52;
 }
 
-.event-info h3 {
+section:nth-of-type(3) article h3 {
     margin: 0.25rem 0;
     font-size: 1.05rem;
     color: #0c3b2e;
 }
 
-.event-info p {
+section:nth-of-type(3) article > div:last-child p {
     font-size: 0.85rem;
     color: #6b7c73;
-}
-
-.event-kuota {
-    margin-top: 0.35rem;
-    font-weight: 600;
 }
 
 /* tampilan di HP */
